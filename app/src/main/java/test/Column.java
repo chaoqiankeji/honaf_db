@@ -16,5 +16,7 @@ import java.lang.annotation.Target;
 public @interface Column {
 
     String value() default "";
+    String type() default "text";
+    int age() default 18;
 
 }

@@ -55,7 +55,7 @@ public class DBManager {
         if (cursor.moveToNext()) {
             developer = new Developer();
             developer.setId(cursor.getString(cursor.getColumnIndex(Developer.ID)));
-            developer.setName(cursor.getString(cursor.getColumnIndex(Developer.NAME)));
+            developer.setName(cursor.getInt(cursor.getColumnIndex(Developer.NAME))+"");
             developer.setAge(cursor.getInt(cursor.getColumnIndex(Developer.AGE)));
             // TODO: 2017/3/14  序列化
 //            developer.setCompany(cursor.getString(cursor.getColumnIndex(Developer.COMPANY)));
@@ -98,7 +98,7 @@ public class DBManager {
          */
         @Override
         public void onCreate(SQLiteDatabase db) {
-            db.execSQL("create table if not exists developer (id honaf primary key not null,name text,age text,company text,skills text)");
+            db.execSQL("create table if not exists developer (id honaf primary key not null,name INTEGER,age text,company text,skills text)");
         }
 
 
