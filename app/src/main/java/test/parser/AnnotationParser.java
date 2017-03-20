@@ -2,11 +2,7 @@ package test.parser;
 
 import java.lang.reflect.Field;
 
-/**
- * Created with IntelliJ IDEA.
- * User: Devin     Date: 2016/9/21 17:43
- * More wonderful content please pay attention to -> http://zhangchuzhao.site
- */
+
 
 public class AnnotationParser {
     public static void main(String[] args) {

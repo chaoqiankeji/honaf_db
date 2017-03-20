@@ -16,7 +16,7 @@ public @interface FruitColor {
     /**
      * 颜色枚举
      */
-    public enum Color{BLUE, RED, GREEN};
+    enum Color{BLUE, RED, GREEN};
 
     /**
      * 颜色属性

@@ -1,10 +1,6 @@
 package test.custom;
 
-/**
- * Created with IntelliJ IDEA.
- * User: Devin     Date: 2016/9/22 15:43
- * More wonderful content please pay attention to -> http://zhangchuzhao.site
- */
+
 @MyAnnotation(
         value = "info",
         name = "myname",

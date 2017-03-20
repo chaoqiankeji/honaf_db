@@ -1,8 +1,5 @@
 package test.buildIn.deprecated;
 
-/**
- * Created by Devin on 2016/7/19.
- */
 public class AppleService {
     public void displayName(){
         System.out.println("水果的名字是：苹果");

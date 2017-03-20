@@ -3,11 +3,6 @@ package test.buildIn.suppressWarnings;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created with IntelliJ IDEA.
- * User: Devin     Date: 2016/9/22 15:37
- * More wonderful content please pay attention to -> http://zhangchuzhao.site
- */
 /*
 　　　　1. deprecation：使用了不赞成使用的类或方法时的警告；
 　　　　2. unchecked：执行了未检查的转换时的警告，例如当使用集合时没有用泛型 (Generics) 来指定集合保存的类型;
@@ -21,9 +16,9 @@ import java.util.List;
         10. [更多关键字](http://www.cnblogs.com/fsjohnhuang/p/4040785.html)
  */
 public class SuppressWarningTest {
-    @SuppressWarnings("unchecked")
+//    @SuppressWarnings("unchecked")
     public void addItems2(String item){
-        @SuppressWarnings("unused")
+//        @SuppressWarnings("unused")
         List list = new ArrayList();
         List items = new ArrayList();
         items.add(item);
@@ -35,9 +30,9 @@ public class SuppressWarningTest {
         list.add(item);
     }
 
-    @SuppressWarnings("all")
+//    @SuppressWarnings("all")
     public void addItems(String item){
-        List list = new ArrayList();
+        List list = new ArrayList<>();
         list.add(item);
     }
 }

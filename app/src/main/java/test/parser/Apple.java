@@ -1,8 +1,6 @@
 package test.parser;
 
-/**
- * Created by Devin on 2016/7/19.
- */
+
 public class Apple {
     @FruitName("Apple")
     private String appleName;

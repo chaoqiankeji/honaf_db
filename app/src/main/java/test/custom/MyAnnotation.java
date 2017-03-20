@@ -15,8 +15,8 @@ import java.lang.annotation.Target;
 @Documented //生成javadoc文档时，该注解内容一起生成文档
 @Inherited //该注解被子类继承
 public @interface MyAnnotation {
-    public String value() default ""; //当只有一个元素时，建议元素名定义为value(),这样使用时赋值可以省略"value="
-    String name() default "devin"; //String
+    String value() default ""; //当只有一个元素时，建议元素名定义为value(),这样使用时赋值可以省略"value="
+    String name() default "honaf"; //String
     int age() default 18; //int
     boolean isStudent() default true; //boolean
     String[] alias(); //数组
